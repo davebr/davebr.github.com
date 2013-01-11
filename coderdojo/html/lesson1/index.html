@@ -93,8 +93,8 @@ body { width:80%; margin:0 auto; }
 <p><code>&lt;p&gt;&lt;/p&gt;</code> is the paragraph tag.</p>
 
 <p>When setting up a new page the most basic items you need are:</p>
-
-<pre><code>
+<pre>
+<code>
 <!DOCTYPE html>
 &lt;!DOCTYPE html&gt; <br>
 &lt;html&gt; <br>
@@ -127,7 +127,7 @@ body { width:80%; margin:0 auto; }
 &lt;body&gt; <br>
   &lt;h1&gt;Adding an image&lt;/h1&gt; <br>
   &lt;p&gt; <br>
-     &lt;img src=â€image1.jpgâ€ alt=â€My first imageâ€ text=â€My First Imageâ€&gt; <br>
+     &lt;img src="image1.jpg" alt="My first image" text="My First Image"&gt; <br>
     This is an image  <br>
   &lt;/p&gt; <br>
 &lt;/body&gt; <br>
@@ -173,7 +173,7 @@ body { width:80%; margin:0 auto; }
 &lt;body&gt;  <br>
   &lt;h1&gt;Hello World!!&lt;/h1&gt;  <br>
   &lt;p&gt;This is my first web page&lt;/p&gt;  <br>
-  &lt;p&gt;&lt;a href=â€page2.htmlâ€&gt;Page 2&lt;/a&gt;&lt;/p&gt;  <br>
+  &lt;p&gt;&lt;a href="page2.html"&gt;Page 2&lt;/a&gt;&lt;/p&gt;  <br>
 &lt;/body&gt; <br>
 &lt;/html&gt;
 </code></pre>
@@ -253,10 +253,10 @@ body { width:80%; margin:0 auto; }
 <pre>
 <code>
 &lt;ul&gt; <br>
-  &lt;li&gt;&lt;a href=â€page1.htmlâ€&gt;Page 1&lt;/a&gt;&lt;/li&gt;  <br>
-  &lt;li&gt;&lt;a href=â€page2.htmlâ€&gt;Page 2&lt;/a&gt;&lt;/li&gt;  <br>
-  &lt;li&gt;&lt;a href=â€page3.htmlâ€&gt;Page 3&lt;/a&gt;&lt;/li&gt;  <br>
-  &lt;li&gt;&lt;a href=â€page4.htmlâ€&gt;Page 4&lt;/a&gt;&lt;/li&gt;  <br>
+  &lt;li&gt;&lt;a href="page1.html"&gt;Page 1&lt;/a&gt;&lt;/li&gt;  <br>
+  &lt;li&gt;&lt;a href="page2.html"&gt;Page 2&lt;/a&gt;&lt;/li&gt;  <br>
+  &lt;li&gt;&lt;a href="page3.html"&gt;Page 3&lt;/a&gt;&lt;/li&gt;  <br>
+  &lt;li&gt;&lt;a href="page4.html"&gt;Page 4&lt;/a&gt;&lt;/li&gt;  <br>
 &lt;/ul&gt;
 </code>
 </pre>
@@ -273,12 +273,12 @@ body { width:80%; margin:0 auto; }
 &lt;body&gt; <br>
   &lt;h1&gt;Hello World!!&lt;/h1&gt;  <br>
   &lt;p&gt;This is my first web page&lt;/p&gt;  <br>
-  &lt;p&gt;&lt;a href=â€page2.htmlâ€&gt;Page 2&lt;/a&gt;&lt;/p&gt;  <br>
+  &lt;p&gt;&lt;a href="page2.html"&gt;Page 2&lt;/a&gt;&lt;/p&gt;  <br>
   &lt;ul&gt;  <br>
-    &lt;li&gt;&lt;a href=â€page1.htmlâ€&gt;Page 1&lt;/a&gt;&lt;/li&gt;  <br>
-    &lt;li&gt;&lt;a href=â€page2.htmlâ€&gt;Page 2&lt;/a&gt;&lt;/li&gt;  <br>
-    &lt;li&gt;&lt;a href=â€page3.htmlâ€&gt;Page 3&lt;/a&gt;&lt;/li&gt;  <br>
-    &lt;li&gt;&lt;a href=â€page4.htmlâ€&gt;Page 4&lt;/a&gt;&lt;/li&gt;  <br>
+    &lt;li&gt;&lt;a href="page1.html"&gt;Page 1&lt;/a&gt;&lt;/li&gt;  <br>
+    &lt;li&gt;&lt;a href="page2.html"&gt;Page 2&lt;/a&gt;&lt;/li&gt;  <br>
+    &lt;li&gt;&lt;a href="page3.html"&gt;Page 3&lt;/a&gt;&lt;/li&gt;  <br>
+    &lt;li&gt;&lt;a href="page4.html"&gt;Page 4&lt;/a&gt;&lt;/li&gt;  <br>
   &lt;/ul&gt;  <br>
 &lt;/body&gt;  <br>
 &lt;/html&gt;
@@ -296,6 +296,65 @@ body { width:80%; margin:0 auto; }
 <p>Now add that to page2.html , page3.html and page4.html</p>
 
 <h2 id='tables'>Tables</h2>
+
+<p>Tables are used to present information or data in series of rows and cells</p>
+
+<p>An example of a table is</p>
+<table>
+<tr>
+<td>This is a cell</td>
+<td>This is the 2nd cell</td>
+</tr>
+<tr>
+<td>We now start a new row</td>
+<td>This is the last cell</td>
+</tr>
+</table>
+
+
+<p>Create a new file called page5.html</p>
+
+<pre>
+<code>
+&lt;!DOCTYPE html&gt; <br>
+&lt;html&gt;  <br>
+&lt;head&gt;  <br>
+  &lt;title&gt;First Page&lt;/title&gt;  <br>
+&lt;/head&gt; <br>
+&lt;body&gt; <br><
+&lt;p&gt;An example of a table is&lt;/p&gt;<br>
+&lt;table&gt;<br>
+&lt;tr&gt;<br>
+&lt;td&gt;This is a cell&lt;/td&gt; <br>
+&lt;td&gt;This is the 2nd cell&lt;/td&gt; <br>
+&lt;/tr&gt; <br>
+&lt;tr&gt; <br>
+&lt;td&gt;We now start a new row&lt;/td&gt; <br>
+&lt;td&gt;This is the last cell&lt;/td&gt; <br>
+&lt;/tr&gt;<br> 
+&lt;/table&gt;  <br>
+&lt;/body&gt;  <br>
+&lt;/html&gt;
+</code>
+</pre>
+
+
+<h3 id='explanation'>Explanation</h3>
+
+<p>A table is added with the <code>&lt;table&gt;&lt;/table&gt;</code> tag.</p>
+
+<p>A table row tag is <code>&lt;tr&gt;&lt;/tr&gt;</code> </p>
+
+<p>A table cell tag is <code>&lt;td&gt;&lt;/td&gt;</code> </p>
+
+<p>A table cell always has to be in a table row tag. You can have multiple table cells in a table row</p>
+
+
+<h3 id='try_it_yourself'>Try It Yourself</h3>
+
+<p>Create a new file called page6.html, and create a table with 4 rows and 4 cells in each row</p>
+
+
 
 <h2 id='conclusion'>Conclusion</h2>
 
