@@ -4,12 +4,6 @@ title: Gorey Coder Dojo HTML Lesson 1
 
 ---
 
-<html>
-
-<head>
-<style
-<body>
-
 # Lesson 1
 
 ## Introduction
