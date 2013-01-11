@@ -43,16 +43,16 @@ body { width:80%; margin:0 auto; }
 
 <code>
 <!DOCTYPE html>
-<html>
-<head> 
-  <title>First Page</title>
-</head>
-<body>
-  <h1>Hello World!!</h1>
-  <p>This is my first web page</p>
-</body>
-</html>
-</code>
+&lt;!DOCTYPE html&gt; <br>
+&lt;html&gt; <br>
+&lt;head&gt; <br>
+  &lt;title&gt;First Page&lt;/title&gt;  <br>
+&lt;/head&gt; <br>
+&lt;body&gt; <br>
+  &lt;h1&gt;Hello World!!&lt;/h1&gt; <br>
+  &lt;p&gt;This is my first web page&lt;/p&gt; <br>
+&lt;/body&gt; <br>
+&lt;/html&gt;</code>
 
 <p>Don&#8217;t worry, you don&#8217;t need to understand the above, we&#8217;ll explain it in a little while.</p>
 
@@ -81,12 +81,12 @@ body { width:80%; margin:0 auto; }
 <p>The other header tags are: </p>
 <pre>
 <code>
-<h1></h1>
-<h2></h2>
-<h3></h3>
-<h4></h4>
-<h5></h5>
-<h6></h6>
+&lt;h1&gt;&lt;/h1&gt; <br>
+&lt;h2&gt;&lt;/h2&gt; <br>
+&lt;h3&gt;&lt;/h3&gt; <br>
+&lt;h4&gt;&lt;/h4&gt; <br>
+&lt;h5&gt;&lt;/h5&gt; <br>
+&lt;h6&gt;&lt;/h6&gt; <br>
 </code>
 </pre>
 
@@ -96,12 +96,13 @@ body { width:80%; margin:0 auto; }
 
 <pre><code>
 <!DOCTYPE html>
-<html>
-<head>
-</head>
-<body>
-</body>
-</html>
+&lt;!DOCTYPE html&gt; <br>
+&lt;html&gt; <br>
+&lt;head&gt; <br>
+&lt;/head&gt; <br>
+&lt;body&gt; <br> 
+&lt;/body&gt; <br>
+&lt;/html&gt; 
 </code></pre>
 
 <h3 id='try_it_yourself'>Try It Yourself</h3>
@@ -118,23 +119,23 @@ body { width:80%; margin:0 auto; }
 
 <pre>
 <code>
-<!DOCTYPE html>
-<html>
-<head> 
-  <title>Adding an image</title>
-</head>
-<body>
-  <h1>Adding an image</h1>
-  <p>
-     <img src=”image1.jpg” alt=”My first image” text=”My First Image”>
-    This is an image 
-  </p>
-</body>
-</html>
+&lt;!DOCTYPE html&gt; <br>
+&lt;html&gt;  <br>
+&lt;head&gt;  <br>
+  &lt;title&gt;Adding an image&lt;/title&gt; <br>
+&lt;/head&gt; <br>
+&lt;body&gt; <br>
+  &lt;h1&gt;Adding an image&lt;/h1&gt; <br>
+  &lt;p&gt; <br>
+     &lt;img src=â€image1.jpgâ€ alt=â€My first imageâ€ text=â€My First Imageâ€&gt; <br>
+    This is an image  <br>
+  &lt;/p&gt; <br>
+&lt;/body&gt; <br>
+&lt;/html&gt; <br>
 </code>
 </pre>
 
-<h3 id='explanation'>Â Explanation</h3>
+<h3 id='explanation'>Explanation</h3>
 
 <p>The new tag we introduced is <code>&lt;img&gt;</code> this does not have a closing tag. In the image tag it has a number of attributes, these are src, alt, text.</p>
 
@@ -162,19 +163,20 @@ body { width:80%; margin:0 auto; }
 
 <p>So it should read:</p>
 
+<pre>
 <code>
-<!DOCTYPE html>
-<html>
-<head> 
-  <title>First Page</title>
-</head>
-<body>
-  <h1>Hello World!!</h1>
-  <p>This is my first web page</p>
-  <p><a href=”page2.html”>Page 2</a></p>
-</body>
-</html>
-</code>
+&lt;!DOCTYPE html&gt; <br>
+&lt;html&gt; <br>
+&lt;head&gt;  <br> 
+  &lt;title&gt;First Page&lt;/title&gt;  <br>
+&lt;/head&gt;  <br>
+&lt;body&gt;  <br>
+  &lt;h1&gt;Hello World!!&lt;/h1&gt;  <br>
+  &lt;p&gt;This is my first web page&lt;/p&gt;  <br>
+  &lt;p&gt;&lt;a href=â€page2.htmlâ€&gt;Page 2&lt;/a&gt;&lt;/p&gt;  <br>
+&lt;/body&gt; <br>
+&lt;/html&gt;
+</code></pre>
 
 <p>Save the file and open it in your web browser. Hover on the Page 2 link and click it.</p>
 
@@ -213,13 +215,13 @@ body { width:80%; margin:0 auto; }
 <p>The above would be written in html as:</p>
 
 
-<code>
-<ol>
-  <li>Item 1</li>
-  <li>Item 2</li>
-  <li>Item 3</li>
-</ol>
-</code>
+<pre><code>
+&lt;ol&gt; <br>
+  &lt;li&gt;Item 1&lt;/li&gt; <br>
+  &lt;li&gt;Item 2&lt;/li&gt;  <br>
+  &lt;li&gt;Item 3&lt;/li&gt; <br>
+&lt;/ol&gt;
+</code></pre>
 
 <p>Unordered lists appear as bullet points</p>
 
@@ -232,13 +234,15 @@ body { width:80%; margin:0 auto; }
 </li>
 </ul>
 
-<p><code>
-<ul>
-  <li>Item 1</li>
-  <li>Item 2</li>
-  <li>Item 3</li>
-</ul>
-</code></p>
+<pre>
+<code>
+&lt;ul&gt; <br>
+  &lt;li&gt;Item 1&lt;/li&gt;  <br>
+  &lt;li&gt;Item 2&lt;/li&gt; <br>
+  &lt;li&gt;Item 3&lt;/li&gt; <br>
+&lt;/ul&gt;
+</code>
+</pre>
 
 <p>We&#8217;ll leave definition lists out of it for the moment.</p>
 
@@ -246,36 +250,40 @@ body { width:80%; margin:0 auto; }
 
 <p>Open page1.html. Underneath your last paragraph add in the following:</p>
 
+<pre>
 <code>
-<ul>
-  <li><a href=”page1.html”>Page 1</a></li>
-  <li><a href=”page2.html”>Page 2</a></li>
-  <li><a href=”page3.html”>Page 3</a></li>
-  <li><a href=”page4.html”>Page 4</a></li>
-</ul>
+&lt;ul&gt; <br>
+  &lt;li&gt;&lt;a href=â€page1.htmlâ€&gt;Page 1&lt;/a&gt;&lt;/li&gt;  <br>
+  &lt;li&gt;&lt;a href=â€page2.htmlâ€&gt;Page 2&lt;/a&gt;&lt;/li&gt;  <br>
+  &lt;li&gt;&lt;a href=â€page3.htmlâ€&gt;Page 3&lt;/a&gt;&lt;/li&gt;  <br>
+  &lt;li&gt;&lt;a href=â€page4.htmlâ€&gt;Page 4&lt;/a&gt;&lt;/li&gt;  <br>
+&lt;/ul&gt;
 </code>
+</pre>
 
 <p>The page should look like the following:</p>
 
+<pre>
 <code>
-<!DOCTYPE html>
-<html>
-<head> 
-  <title>First Page</title>
-</head>
-<body>
-  <h1>Hello World!!</h1>
-  <p>This is my first web page</p>
-  <p><a href=”page2.html”>Page 2</a></p>
-  <ul>
-    <li><a href=”page1.html”>Page 1</a></li>
-    <li><a href=”page2.html”>Page 2</a></li>
-    <li><a href=”page3.html”>Page 3</a></li>
-    <li><a href=”page4.html”>Page 4</a></li>
-  </ul>
-</body>
-</html>
+&lt;!DOCTYPE html&gt; <br>
+&lt;html&gt;  <br>
+&lt;head&gt;  <br>
+  &lt;title&gt;First Page&lt;/title&gt;  <br>
+&lt;/head&gt; <br>
+&lt;body&gt; <br>
+  &lt;h1&gt;Hello World!!&lt;/h1&gt;  <br>
+  &lt;p&gt;This is my first web page&lt;/p&gt;  <br>
+  &lt;p&gt;&lt;a href=â€page2.htmlâ€&gt;Page 2&lt;/a&gt;&lt;/p&gt;  <br>
+  &lt;ul&gt;  <br>
+    &lt;li&gt;&lt;a href=â€page1.htmlâ€&gt;Page 1&lt;/a&gt;&lt;/li&gt;  <br>
+    &lt;li&gt;&lt;a href=â€page2.htmlâ€&gt;Page 2&lt;/a&gt;&lt;/li&gt;  <br>
+    &lt;li&gt;&lt;a href=â€page3.htmlâ€&gt;Page 3&lt;/a&gt;&lt;/li&gt;  <br>
+    &lt;li&gt;&lt;a href=â€page4.htmlâ€&gt;Page 4&lt;/a&gt;&lt;/li&gt;  <br>
+  &lt;/ul&gt;  <br>
+&lt;/body&gt;  <br>
+&lt;/html&gt;
 </code>
+</pre>
 
 <p>Save the file and open it in your browser. Now click on any of the links you added.</p>
 
