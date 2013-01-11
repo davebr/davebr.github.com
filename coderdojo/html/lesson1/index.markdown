@@ -184,6 +184,7 @@ There are 3 types of lists
 + Definition Lists
     
 Ordered lists appear as list with numbers 
+
 1. Item 1
 2.  Item 2
 3.  Item 3
