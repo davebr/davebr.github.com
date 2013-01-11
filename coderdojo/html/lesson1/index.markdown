@@ -63,7 +63,7 @@ The tags we used in the first lesson where:
 
 `<head></head>` this is the head of the page. We add other tags in here to set our page up. Nothing in the head tag is displayed on the actual page. 
 
-`<title></title>` This is always placed between the <head> tag and sets the title of the page.  The title is shown on the web browser tab.
+`<title></title>` This is always placed between the `<head>` tag and sets the title of the page.  The title is shown on the web browser tab.
 
 `<body></body>` Everything placed in here will show on your page. 
 
@@ -100,7 +100,7 @@ Make a new page called page2.html on the page set the page title as My second pa
 
 A web page looks pretty boring without images. 
 
-Go to the web page <INSERT PAGE>, when the page opens right click on the image and select the Save Image As option and save the image to your lesson1 folder. 
+Go to the web page (INSERT PAGE) , when the page opens right click on the image and select the Save Image As option and save the image to your lesson1 folder. 
 
 Type out the following and save it in the lesson1 folder as page3.html
 
@@ -129,7 +129,7 @@ The new tag we introduced is `<img>` this does not have a closing tag. In the im
    
 ### Try It Yourself
 
-Save the image from this url <INSERT IMAGE2>. Create a new page and add a title ‘My Second Image'. Add a h4 heading with the text of ‘My Second image'. And add the image. Save it in the lesson1 folder and call it page4.html 
+Save the image from this url (INSERT IMAGE2). Create a new page and add a title ‘My Second Image'. Add a h4 heading with the text of ‘My Second image'. And add the image. Save it in the lesson1 folder and call it page4.html 
     
 ## Links
     
