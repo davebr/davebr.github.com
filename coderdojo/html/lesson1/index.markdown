@@ -4,6 +4,11 @@ title: Gorey Coder Dojo HTML Lesson 1
 
 ---
 
+<html>
+
+<head>
+<style
+<body>
 
 # Lesson 1
 
@@ -11,7 +16,7 @@ title: Gorey Coder Dojo HTML Lesson 1
 
 We are going to learn how to make a webpage. A webpage is made up of HyperText Markup Lanugage (HTML).  When you visit a web site your web browser downloads the HTML for the page and then renders or displays that HTML as the pictures, text and videos you see on every website. 
 
-We are walking through a number of steps to create web pages in this lesson. If you don’t understand anything or something doesn’t work the way you thing it should just shout for help!
+We are walking through a number of steps to create web pages in this lesson. If you don't understand anything or something doesn't work the way you thing it should just shout for help!
 
 ## Startup
 
@@ -32,7 +37,8 @@ The following characters are valid urls ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmn
 On your desktop create a folder called coderdojo. In the coderdojo folder create another folder called lesson1.
 
 When your ready open Sublime Text and type in the following code.
-```html
+
+```
 <!DOCTYPE html>
 <html>
 <head> 
@@ -45,11 +51,11 @@ When your ready open Sublime Text and type in the following code.
 </html>
 ```
 
-Don’t worry, you don’t need to understand the above, we’ll explain it in a little while.  
+Don't worry, you don't need to understand the above, we'll explain it in a little while.  
 
 Once you have it typed in save the file into the lesson1 folder you created and call it page1.html (the .html is important as it tells the browser it is a html page).
 
-Now open your browser and press ctrl o (cmd o on a mac) file the page1.html file and press open. You should see a web page with Hello World!! on it. If you don’t check the steps above or call for help!
+Now open your browser and press ctrl o (cmd o on a mac) file the page1.html file and press open. You should see a web page with Hello World!! on it. If you don't check the steps above or call for help!
 
 ### Explanation 
 
@@ -70,7 +76,7 @@ The tags we used in the first lesson where:
 `<h1></h1>` Is called a header tag. There are 6 header tags. They are a way to add some headings to your text. A page should only have one `<h1>` tag but can have many of the other heading tags.
 
 The other header tags are:
-```html
+```
 <h1></h1>
 <h2></h2>
 <h3></h3>
@@ -83,7 +89,7 @@ The other header tags are:
 
 When setting up a new page the most basic items you need are:
 
-```html
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -104,7 +110,7 @@ Go to the web page <INSERT PAGE>, when the page opens right click on the image a
 
 Type out the following and save it in the lesson1 folder as page3.html
 
-```html
+```
 <!DOCTYPE html>
 <html>
 <head> 
@@ -123,13 +129,13 @@ Type out the following and save it in the lesson1 folder as page3.html
    
 The new tag we introduced is `<img>` this does not have a closing tag. In the image tag it has a number of attributes, these are src, alt, text. 
    
-+ src (source) means the location of the file. The source can be absolute or relative to the page. Don’t worry about this just now we’ll talk about this later.
++ src (source) means the location of the file. The source can be absolute or relative to the page. Don't worry about this just now we'll talk about this later.
 + alt (alternate text) this is the text that will be shown if the image is not found.
 + title means the text that is shown when you hover over the image. 
    
 ### Try It Yourself
 
-Save the image from this url <INSERT IMAGE2>. Create a new page and add a title ‘My Second Image’. Add a h4 heading with the text of ‘My Second image’. And add the image. Save it in the lesson1 folder and call it page4.html 
+Save the image from this url <INSERT IMAGE2>. Create a new page and add a title ‘My Second Image'. Add a h4 heading with the text of ‘My Second image'. And add the image. Save it in the lesson1 folder and call it page4.html 
     
 ## Links
     
@@ -143,7 +149,7 @@ Open page1.html in your text editor.  Underneath the first paragraph add in the 
 
 So it should read:
 
-```html
+```
 <!DOCTYPE html>
 <html>
 <head> 
@@ -163,7 +169,7 @@ Save the file and open it in your web browser. Hover on the Page 2 link and clic
     
 The link tag is called an anchor tag. It is opened with `<a>` and closed with an `</a>`. All the text between the 2 tags will be the text that will be used in the link.
     
-The `<a>` tag has one attribute ‘href’ this is the page that it will link to. 
+The `<a>` tag has one attribute ‘href' this is the page that it will link to. 
     
 ### Try It Yourself
 
@@ -190,7 +196,7 @@ Ordered lists appear as list with numbers
     
 The above would be written in html as:
 
-```html
+```
 <ol>
   <li>Item 1</li>
   <li>Item 2</li>
@@ -205,7 +211,8 @@ Unordered lists appear as bullet points
 + Item 3
           
 The above would be written in html as:
-```html
+
+```
 <ul>
   <li>Item 1</li>
   <li>Item 2</li>
@@ -213,13 +220,13 @@ The above would be written in html as:
 </ul>
 ```      
       
-We’ll leave definition lists out of it for the moment. 
+We'll leave definition lists out of it for the moment. 
       
 So now lets add in links to all our pages to each page.
       
 Open page1.html. Underneath your last paragraph add in the following:
 
-```html
+```
 <ul>
   <li><a href=”page1.html”>Page 1</a></li>
   <li><a href=”page2.html”>Page 2</a></li>
@@ -230,7 +237,7 @@ Open page1.html. Underneath your last paragraph add in the following:
                     
 The page should look like the following:
 
-```html
+```
 <!DOCTYPE html>
 <html>
 <head> 
@@ -253,7 +260,7 @@ Save the file and open it in your browser.  Now click on any of the links you ad
 
 ### Explanation
 
-We’ve added the unordered list and each item on the list is surrounded by a `<li></li>` , in between the `<li>` we have added a link (anchor) tag with a link to each page.
+We've added the unordered list and each item on the list is surrounded by a `<li></li>` , in between the `<li>` we have added a link (anchor) tag with a link to each page.
 
 ### Try It Yourself
 
