@@ -5,22 +5,6 @@ title: Gorey Coder Dojo HTML Lesson 2
 ---
 
 
-<html>
-<head>
-<link href='http://fonts.googleapis.com/css?family=Cutive+Mono|Maven+Pro' rel='stylesheet' type='text/css'>
-
-<style>
-body { width:80%; margin:0 auto; font-family: 'Maven Pro', serif; font-size:1em; }
-
-code { font-family: 'Cutive Mono', sans-serif; } 
-
-h1 { border-bottom: 1px solid #ccc;}
-</style>
-</head>
-
-<body>
-
-
 # Lesson 2
 
 ## Introduction
@@ -125,48 +109,94 @@ p{
 }
 
 ```
-
-
    
 ### Explanation
    
-The new tag we introduced is `<img>` this does not have a closing tag. In the image tag it has a number of attributes, these are src, alt, text. 
-   
-+ src (source) means the location of the file. The source can be absolute or relative to the page. Don't worry about this just now we'll talk about this later.
-+ alt (alternate text) this is the text that will be shown if the image is not found.
-+ title means the text that is shown when you hover over the image. 
-   
+We have added 2 styles to 3 selectors. We have changed the font-size for the everything in the body section to 16px, this is applied to the whole document.
+
+We then override the font-size on the h1 and p tags. We also change the color for the fonts with the color style.
+
+When using sizes in CSS, in this case px, there are a number of different units we can use:
+
++ em - e.g. font-size: 3em
++ px - e.g. font-size: 14px 
++ pt - e.g. as font-size: 14pt
++ % - e.g. as font-size: 50%
+
+Usually when writing pages for a website you would use em or %, but for the purposes of learning css using px as unit of measurement is easier. 
+
+When using colors (note the American way of spelling, it's not the European way, colour).
+
+There are several ways to state a color with CSS. Several ways to state the color red are:
+
++ red
++ rgb(255,0,0)  (rgb values between 0 and 255)
++ rgb(100%,0%,0%)  (rgb values percentage)
++ #ff0000 (hexadecimal)
++ #f00 (hexadecimal shorthand)
+
+You would usually use rgb or hexadecimal when building a webpage but for now we'll use the following:
+
+aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, orange, purple, red, silver, teal, white, and yellow
+
+
+
 ### Try It Yourself
 
-Save the image from this url (INSERT IMAGE2). Create a new page and add a title ‘My Second Image'. Add a h4 heading with the text of ‘My Second image'. And add the image. Save it in the lesson1 folder and call it page4.html 
-    
-## Links
-    
-The web would only be a series of pages without links!  So lets link all our pages together now. 
-    
-Open page1.html in your text editor.  Underneath the first paragraph add in the following text.
+Add the color purple to the body tag, change the color on the li element to lime.
 
-```html
-<p><a href=”page2.html”>Page 2</a></p>
+Let's introduce a new property called background-color. Set you body background color to green. and your h1 tag background color to white.
+
+By now you should have a very interesting looking page!
+
+
+## Fonts
+
+Before we start into fonts, in your style sheet add the following  ``` /* ``` before your text and after all the text add ``` */ ```
+These are comments and anything between them are ignored. They are good for leaving little notes to yourself about the blocks of css you write.
+
+So we've commented out the css you've already written.
+
+Now we'll add the following:
+
 ```
+body{
 
-So it should read:
+}
 
-```
-<!DOCTYPE html>
-<html>
-<head> 
-  <title>First Page</title>
-</head>
-<body>
-  <h1>Hello World!!</h1>
-  <p>This is my first web page</p>
-  <p><a href=”page2.html”>Page 2</a></p>
-</body>
-</html>
-```
+font-family
+This is the font itself, such as Times New Roman, Arial, or Verdana.
 
-Save the file and open it in your web browser. Hover on the Page 2 link and click it.
+The font you specify must be on the user's computer, so there is little point in using obscure fonts. There are a select few 'safe' fonts (the most commonly used are arial, verdana and times new roman), but you can specify more than one font, separated by commas. The purpose of this is that if the user does not have the first font you specify, the browser will go through the list until it finds one it does have. This is useful because different computers sometimes have different fonts installed. So font-family: arial, helvetica, for example, is used so that similar fonts are used on PC (which traditionally has arial, but not helvetica) and Apple Mac (which, traditionally, does not have arial and so helvetica, which it does normally have, will be used).
+
+Note: if the name of a font is more than one word, it should be put in quotation marks, such as font-family: "Times New Roman".
+
+font-size
+The size of the font. Be careful with this - text such as headings should not just be a paragraph in a large font; you should still use headings (h1, h2 etc.) even though, in practice, you could make the font-size of a paragraph larger than that of a heading (not recommended for sensible people).
+
+font-weight
+This states whether the text is bold or not. In practice this usually only works as font-weight: bold or font-weight: normal. In theory it can also be bolder, lighter, 100, 200, 300, 400, 500, 600, 700, 800 or 900, but seeing as many browsers shake their heads and say "I don't think so", it's safer to stick with bold and normal.
+
+font-style
+This states whether the text is italic or not. It can be font-style: italic or font-style: normal.
+
+text-decoration
+This states whether the text is underlined or not. This can be:
+
+text-decoration: overline, which places a line above the text.
+text-decoration: line-through, strike-through, which puts a line through the text.
+text-decoration: underline should only be used for links because users generally expect underlined text to be links.
+This property is usually used to decorate links, such as specifying no underline with text-decoration: none.
+
+text-transform
+This will change the case of the text.
+
+text-transform: capitalize turns the first letter of every word into uppercase.
+text-transform: uppercase turns everything into uppercase.
+text-transform: lowercase turns everything into lowercase.
+text-transform: none I'll leave for you to work out.
+
+
     
 ### Explanation
     
@@ -278,5 +308,4 @@ What you have learned today are the basics in making a web page. All the tags yo
 
 The next lesson is about learning Cascading Style Sheets or CSS for short. CSS adds colour to your page, changes the fonts, and lays items out on the page.  
 
-</body>
-</html>
+
