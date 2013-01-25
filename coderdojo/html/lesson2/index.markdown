@@ -34,6 +34,7 @@ A note on creating folders and html file names. It is best practice not to have 
 On your desktop create a folder called coderdojo. In the coderdojo folder create another folder called lesson2.
 
 When your ready open your text editor and type in the following code 
+
 ```
 <!DOCTYPE html>
 <html>
@@ -74,9 +75,9 @@ Now open your browser and press ctrl o (cmd o on a mac) file the index.html file
 
 ### Explanation 
 
-In lesson 1 we covered the basic html tags. The new one we added here was in the ```<head>``` section. 
+In lesson 1 we covered the basic html tags. The new one we added here was in the `<head>` section. 
 
-```<link type="text/css" rel="stylesheet" href="style.css">```
+`<link type="text/css" rel="stylesheet" href="style.css">`
 
 What we've done here is to add the style sheet to the page. As we have not added any styles yet we won't see anything.
 
@@ -151,7 +152,7 @@ By now you should have a very interesting looking page!
 
 ## Fonts
 
-Before we start into fonts, in your style sheet add the following  ``` /* ``` before your text and after all the text add ``` */ ```
+Before we start into fonts, in your style sheet add the following  /*  before your text and after all the text add */ 
 These are comments and anything between them are ignored. They are good for leaving little notes to yourself about the blocks of css you write.
 
 So we've commented out the css you've already written.
@@ -162,7 +163,7 @@ Now we'll add the following to index.html:
 <a href="http://www.google.ie">www.google.ie</a>
 ```
 
-You can add that anywhere between the ```<body></body>``` tags
+You can add that anywhere between the `<body></body>` tags
 
 
 ```
@@ -200,7 +201,9 @@ table{
 We have added a lot of font styles here so lets explaing them.
 
 #### font-family
+
 This applies the font to the selector. The font you choose must be installed on the users computer or included with the page for download. The easiest way to style a page is to use a 'Web Safe Font', these are Arial, Verdana, "Times New Roman" (Note the "" if the font name has spaces in it). You can also speficy a number of fonts in the value.
+
 ```
 font-family: Arial, Verdana, sans-serif;
 ```
@@ -209,7 +212,9 @@ This means that it trys to use the first font, and if that is not installed it w
 
 
 #### font-size
+
 We've talked about about sizes previously, we can use
+
 + em
 + px
 + %
@@ -231,7 +236,9 @@ This states whether the text is underlined or not. The values can be:
 + underline
 
 #### text-transform
+
 This transforms the text according to the value used.
+
 + capitalize
 + uppercase
 + lowercase
@@ -300,6 +307,7 @@ For borders we have the following:
 
 Margins, padding and borders follow the box model:
 
+```
 <div style="overflow: auto; padding: 0 1em 1em 1em;	margin: 0 2em 1em 2em; background-color: #ccf;">
 	Margin box
 	<div style="padding: 0 1em 1em 1em;	background-color: #66f;">
@@ -312,6 +320,7 @@ Margins, padding and borders follow the box model:
 		</div>
 	</div>
 </div>
+```
 
 The bit in the middle (element box) is your img, p, or any other element, outside for that is the padding then the border and then the margin.
 
@@ -319,10 +328,8 @@ The bit in the middle (element box) is your img, p, or any other element, outsid
 
 Add margins, borders and padding to the elements on your page.
 
-
-
-
 ## Resources
+
 + [http://www.htmldog.com/guides/cssbeginner/](http://www.htmldog.com/guides/cssbeginner/)
 + [http://www.sitepoint.com/html-css-beginners-guide/](http://www.sitepoint.com/html-css-beginners-guide/)
 + [http://www.w3schools.com/css/](http://www.w3schools.com/css/)
