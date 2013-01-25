@@ -4,21 +4,6 @@ title: Gorey Coder Dojo HTML Lesson 2
 
 ---
 
-<html>
-<head>
-<link href='http://fonts.googleapis.com/css?family=Cutive+Mono|Maven+Pro' rel='stylesheet' type='text/css'>
-
-<style>
-body { width:80%; margin:0 auto; font-family: 'Maven Pro', serif; font-size:1em; }
-
-code { font-family: 'Cutive Mono', sans-serif; } 
-
-h1 { border-bottom: 1px solid #ccc;}
-</style>
-</head>
-
-<body>
-
 # Lesson 2
 
 ## Introduction
@@ -93,33 +78,20 @@ In lesson 1 we covered the basic html tags. The new one we added here was in the
 
 ```<link type="text/css" rel="stylesheet" href="style.css">```
 
-What we've done here is to add 
+What we've done here is to add the style sheet to the page. As we have not added any styles yet we won't see anything.
 
-### Try It Yourself
-Make a new page called page2.html on the page set the page title as My second page. Add a h1 tag and 2 paragraphs of text. Then add a h2 tag and another 2 paragraphs of text.
+There are 2 other ways to add styles to a page, we won't cover them just yet. But you can look up some of the website resources at the end of the page to learnmore.
 
-## Images
 
-A web page looks pretty boring without images. 
+## CSS
 
-Go to the web page (INSERT PAGE) , when the page opens right click on the image and select the Save Image As option and save the image to your lesson1 folder. 
+You apply CSS to selectors. There are 3 different types of selectors. For the moment we'll concentrate 
 
-Type out the following and save it in the lesson1 folder as page3.html
 
 ```
-<!DOCTYPE html>
-<html>
-<head> 
-  <title>Adding an image</title>
-</head>
-<body>
-  <h1>Adding an image</h1>
-  <p>
-     <img src=”image1.jpg” alt=”My first image” text=”My First Image”>
-    This is an image 
-  </p>
-</body>
-</html>
+
+
+```
    
 ### Explanation
    
@@ -271,5 +243,3 @@ What you have learned today are the basics in making a web page. All the tags yo
 
 The next lesson is about learning Cascading Style Sheets or CSS for short. CSS adds colour to your page, changes the fonts, and lays items out on the page.  
 
-</body>
-</html>
