@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Cutive+Mono|Maven+Pro' rel='stylesheet' type='text/css'>
+
+<style>
+body { width:80%; margin:0 auto; font-family: 'Maven Pro', serif; font-size:1em; }
+
+code { font-family: 'Cutive Mono', sans-serif; } 
+
+h1 { border-bottom: 1px solid #ccc;}
+</style>
+
+</head>
+
+
+<h1>Lesson 2</h1>
+
+<h2>Introduction</h2>
+
+
+<p>In lesson 1 we looked at how to put together a webpage and looked at some basic html tags. This week well be looking at Cascading Style Sheets, or CSS for short.</p> 
+
+<p>Using CSS allows us to add style to our HTML. There are a number of ways of applying CSS to HTML. But the basic format of css is property:value;</p>
+
+<p>If you don't understand anything or something doesn't work the way you thing it should just shout for help!</p>
+
+<h2>Startup</h2>
+
+<p>To start writing html you will need a text editor. One you can try is <a href="http://www.sublimetext.com/2">Sublime Text</a> . Go there now and download and install it. You should never use Microsoft Word to write HTML.</p> 
+
+The next thing you need is a web browser. You can use your current web browser. Google Chrome is a good browser for using to check and debug (fix) your HTML code if there are errors in it. <a href="http://www.google.com/chrome">Download Chrome Here</a>.
+
+<p>A note on creating folders and html file names. It is best practice not to have spaces in the names of web folders or file names. So you can call your files anything like the following. </p>
+
+<ul>
+<li>MyWebPage.html</li>
+<li>mywebpage.html</li>
+<li>my-web-page.html</li>
+</ul>
+
+
+<h2>Applying CSS</h2>
+
+<p>On your desktop create a folder called coderdojo. In the coderdojo folder create another folder called lesson2.</p>
+
+<p>When your ready open your text editor and type in the following code</p> 
+
+<pre>
+<code>
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt; 
+  &lt;title&gt;CSS Page&lt;/title&gt;
+  &lt;link type="text/css" rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;This is a h1 tag&lt;/h1&gt;
+   
+  &lt;p&gt;This is a paragraph&lt;/p&gt;
+     
+  &lt;ul&gt;
+      &lt;li&gt;List item 1&lt;/li&gt;
+      &lt;li&gt;List item 2&lt;/li&gt;
+      &lt;li&gt;List item 3&lt;/li&gt;
+      &lt;li&gt;List item 4&lt;/li&gt;
+  &lt;/ul&gt;
+    &lt;table&gt;
+      &lt;tr&gt;
+        &lt;td&gt;cell 1&lt;/td&gt;
+        &lt;td&gt;cell 2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;cell 3&lt;/td&gt;
+        &lt;td&gt;cell 4&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code>
+</pre>
+
+<p>Save it as index.html in the lesson2 folder you created. Also create a new file called style.css in that same folder.</p>
+
+
+<p>Now open your browser and press ctrl o (cmd o on a mac) file the index.html file and press open.</p>
+
+
+<h3>Explanation</h3> 
+
+<p>In lesson 1 we covered the basic html tags. The new one we added here was in the <code>&lt;head&gt;</code> section.</p>
+
+&lt;link type="text/css" rel="stylesheet" href="style.css"&gt;
+
+What we've done here is to add the style sheet to the page. As we have not added any styles yet we won't see anything.
+
+There are 2 other ways to add styles to a page, we won't cover them just yet. But you can look up some of the website resources at the end of the page to learnmore.
+
+
+<h2>CSS</h2>
+
+<p>You apply CSS to selectors. There are 3 different types of selectors. For the moment we'll concentrate on the html tag selectors e.g. body or p</p>
+
+<p>To apply CSS you use property:value.</p>
+
+
+<p>In you style.css file add the following.</p>
+
+<pre>
+<code>
+body{
+  font-size:16px;
+}
+
+h1{
+  font-size:23px;
+  color:navy;
+}
+
+p{
+  font-size:10px;
+  color:red;
+}
+
+</code>
+</pre>
+   
+<h2>Explanation</h2>
+   
+<p>We have added 2 styles to 3 selectors. We have changed the font-size for the everything in the body section to 16px, this is applied to the whole document.</p>
+
+<p>We then override the font-size on the h1 and p tags. We also change the color for the fonts with the color style.</p>
+
+<p>When using sizes in CSS, in this case px, there are a number of different units we can use:</p>
+
+<ul>
+<li>em - e.g. font-size: 3em</li>
+<li>px - e.g. font-size: 14px</li> 
+<li>pt - e.g. as font-size: 14pt</li>
+<li>% - e.g. as font-size: 50%</li>
+</ul>
+
+<p>Usually when writing pages for a website you would use em or %, but for the purposes of learning css using px as unit of measurement is easier. </p>
+
+<p>When using colors (note the American way of spelling, it's not the European way, colour).</p>
+
+<p>There are several ways to state a color with CSS. Several ways to state the color red are:</p>
+
+<ul>
+<li>red</li>
+<li>rgb(255,0,0)  (rgb values between 0 and 255)</li>
+<li>rgb(100%,0%,0%)  (rgb values percentage)</li>
+<li>#ff0000 (hexadecimal)</li>
+<li>#f00 (hexadecimal shorthand)</li>
+</ul>
+
+<p>You would usually use rgb or hexadecimal when building a webpage but for now we'll use the following:</p>
+
+<p>aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, orange, purple, red, silver, teal, white, and yellow</p>
+
+
+
+<h2>Try It Yourself</h2>
+
+<p>Add the color purple to the body tag, change the color on the li element to lime.</p>
+
+<p>Let's introduce a new property called background-color. Set you body background color to green. and your h1 tag background color to white.</p>
+
+By now you should have a very interesting looking page!
+
+
+<h2>Fonts</h2>
+
+<p>Before we start into fonts, in your style sheet add the following  /*  before your text and after all the text add */ <br />
+These are comments and anything between them are ignored. They are good for leaving little notes to yourself about the blocks of css you write.</p>
+
+<p>So we've commented out the css you've already written.</p>
+
+<p>Now we'll add the following to index.html:</p>
+
+<code>
+&lt;a href="http://www.google.ie"&gt;www.google.ie&lt;/a&gt;
+</code>
+
+<p>You can add that anywhere between the <code>&lt;body&gt;&lt;/body&gt;</code> tags</p>
+
+<pre>
+<code>
+body{
+  font-family: verdana, serif;
+  font-weight:normal;
+}
+
+h1{
+  font-style:italic;
+  font-family: "Times New Roman";
+}
+
+a {
+  text-decoration:none;
+}
+
+a:hover{
+  text-decoration:underline;
+}
+
+p{
+  font-weight:bold;
+}
+
+table{
+  text-transform:uppercase;
+}
+
+</code>
+</pre>
+
+  
+<h3>Explanation</h3>
+
+<p>We have added a lot of font styles here so lets explaing them.</p>
+
+<h4>font-family</h4>
+
+<p>This applies the font to the selector. The font you choose must be installed on the users computer or included with the page for download. The easiest way to style a page is to use a 'Web Safe Font', these are Arial, Verdana, "Times New Roman" (Note the "" if the font name has spaces in it). You can also speficy a number of fonts in the value.</p>
+
+<code>
+font-family: Arial, Verdana, sans-serif;
+</code>
+
+<p>This means that it trys to use the first font, and if that is not installed it will use the second font and so on.</p>
+
+
+<h4>font-size</h4>
+
+<p>We've talked about about sizes previously, we can use</p>
+
+<ul>
+<li>em</li>
+<li>px</li>
+<li>%</li>
+<li>pt</li>
+</ul>
+
+<p>For now use px.</p>
+
+<h4>font-weight</h4>
+
+<p>There are 2 values for this, either bold or normal. Some fonts allow you to state a weight of the font, e.g. 100,200,300,400 , unless you know if the font supports that way always use bold or normal.</p>
+
+
+<h4>font-style</h4>
+
+<p>This states if the font should be italic or not. The values can be italic or normal.</p>
+
+<h4>text-decoration</h4>
+
+<p>This states whether the text is underlined or not. The values can be:</p>
+
+<ul>
+<li>overline</li>
+<li>line-through</li>
+<li>underline</li>
+</ul>
+
+<h4>text-transform</h4>
+
+<p>This transforms the text according to the value used.</p>
+
+<ul>
+<li>capitalize</li>
+<li>uppercase</li>
+<li>lowercase</li>
+<li>none</li>
+</ul>
+
+<h4>Text Spacing</h4>
+
+<ul>
+<li>letter-spacing - e.g. 12px</li>
+<li>word-spacing - e.g. 12px</li>
+<li>line-height - e.g. 12px</li>
+<li>text-align: left, right, center, justify</li>
+</ul>
+
+<p>Try applying some of the above styles to see what they do.</p>
+
+
+<p>This is good time to let you know that if you are confused by all the different values and properties that this is normal. Over time using css you will become more familiar with the different properties you can use. Even seasoned veterns of CSS with years of experience still have to look up what a values you can use for particular property. So use some of the resources outlined that the end of the page.</p>
+
+
+<h3>Try It Yourself</h3>
+
+<p>Try changing the font-size of the li and the font-family on the tables. Experiment with getting a nice background-color on the page with nice text.<br />
+Try using the tags above.</p>
+    
+    
+<h2>Margins, Padding and Borders</h2>
+
+<p>These are the 2 most commonly used properties to space and align an element. </p>
+
+<p>Try the following:</p>
+
+<pre>
+<code>
+body{
+  margin:20px;
+}
+
+p{
+  padding-left:40px;
+}
+
+h1{
+  border-style: dashed;
+  border-width: 3px;
+  border-color: red;
+}
+</code>
+</pre>
+
+<h3>Explanation</h3>
+
+<p>Margin can be written the following ways</p>
+
+<ul>
+<li>margin: 10px (10px added to top, left, right, bottom)</li>
+<li>margin-left: 10px (10px added only to the left margin)</li>
+<li>margin-right: 10px </li>
+<li>margin-top: 10px</li>
+<li>margin-bottom: 10px</li>
+</ul>
+
+<p>The same can be used for Padding.</p>
+
+<p>For borders we have the following:</p>
+
+<ul>
+<li>border-style: solid, dotted, dashed, double, groove, ridge, inset and outset.</li>
+<li>border-width: 3px;</li>
+<li>border-left-width: 10px;</li>
+<li>border-right-width: 10px;</li>
+<li>border-color: red;</li>
+</ul>
+
+<p>Margins, padding and borders follow the box model:</p>
+
+<div style="overflow: auto; padding: 0 1em 1em 1em;	margin: 0 2em 1em 2em; background-color: #ccf;">
+	Margin box
+	<div style="padding: 0 1em 1em 1em;	background-color: #66f;">
+		Border box
+		<div style="padding: 0 1em 1em 1em;	background-color: #99f;">
+			Padding box
+			<div style="background-color: white;">
+				Element box
+			</div>
+		</div>
+	</div>
+</div>
+
+<p>The bit in the middle (element box) is your img, p, or any other element, outside for that is the padding then the border and then the margin.</p>
+
+<h3>Try It Yourself</h3>
+
+<p>Add margins, borders and padding to the elements on your page.</p>
+
+<h2>Resources</h2>
+
+<ul>
+<li><a href="http://www.htmldog.com/guides/cssbeginner/">http://www.htmldog.com/guides/cssbeginner/</a></li>
+<li><a href="http://www.sitepoint.com/html-css-beginners-guide/">http://www.sitepoint.com/html-css-beginners-guide/</a></li>
+<li><a href="http://www.w3schools.com/css/">http://www.w3schools.com/css/</a></li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>What you have learned today are the basics in using css. By using the resouces above and practicing writting html and css you will become better at it.</p>
+
+<p>The next lesson is about learning a bit more about html and layouts with css.</p>
+
